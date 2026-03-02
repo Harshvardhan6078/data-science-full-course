@@ -104,7 +104,12 @@ print('hi my name is {} and i am {}'.format(s, 23))
 print('hi my name is {1} and i am {0}'.format(24, s))
 
 # to check only digit and numbers
-print("harsh6078".isalnum())
-print("harsh6078".isdigit())
-print("harsh6078".isalpha())
-print("harsh6078".isidentifier())
+print("harsh6078".isalnum())      # is only alphabet and numbers
+print("harsh6078".isdigit())      # is fully digit
+print("harsh6078".isalpha())      # is alphabet
+print("harsh6078".isidentifier()) # VALID Identifier or not
+
+
+#------------------------------------------------------------------------------------------------
+
+# split(), sep('\n'),join(), replce("nitish","campusx"), strip()-->remove spaces, index('@')
