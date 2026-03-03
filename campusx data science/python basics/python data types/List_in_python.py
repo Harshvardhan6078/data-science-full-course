@@ -112,3 +112,9 @@ for i in l2:
 # len/ min/ max/ sorted ( universal)
 print(len(l2))
 print(l2.index(3))
+
+#---------------------------------------------------------------------------------------------------------------------
+# l.reverse() (permenant operation)
+# l.sort() permenant
+#sorted(l) (temperory operation)
+# l1.copy()
