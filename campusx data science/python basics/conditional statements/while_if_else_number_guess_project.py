@@ -18,5 +18,3 @@ else:
     print("you guessed it right . you guessed at", count , "th attempt")
 
     
-
-
