@@ -109,7 +109,7 @@ for i in l2:
 # --------------------------------------------------------------------------------------------------------------------------
 
 # functions in loops
-# len/ min/ max/ sorted ( universal)
+# len/ min/ max/ sorted, sum( universal)
 print(len(l2))
 print(l2.index(3))
 
