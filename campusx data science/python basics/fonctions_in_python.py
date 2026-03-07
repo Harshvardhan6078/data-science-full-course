@@ -38,3 +38,47 @@ print(print.__doc__)
 
 # **kwargs ( allow us to pass any number of keywords arguments)
 # keyword arguments means that they contain a key-value pair like a python dictionary
+
+def dictionary(**kwarg):
+    for (key,value) in kwarg.items() :
+        print(key, '-->', value )
+
+dictionary(india = 'delhi',srilanka = 'colombo' )
+
+# the sequence is very imporant and fix while using multiple types of inputs -->( normal input --> *args --> **kwargs )  ****************
+
+"""
+When we create a function the function is executed separately from our original program ( It acts as a separate independent program)
+The Life of A function exist only until it is called and it returns value after Function get executed 
+the function from the RAM and variable inside it get destroyed automatically
+
+"""
+# without return value the default return is None 
+# some functions dont have return value ( eg - list.uppend(9) --> permenant changes )
+
+# variable scope
+
+# local and global variable (locals can use global variables but cant change it)
+# global keyword
+
+# nested functions
+
+# functions are 1st class citizens ( function in python are data type function)
+
+# function is immutable data type
+
+def f():
+    def x(a,b):
+        return a+b
+    return x
+val = f()(3,4)
+print(val)
+
+
+# print(funct_b(funct_a))   ********************************
+# advantages of function
+# code modularity
+# code readibility
+# code reusability
+
+
