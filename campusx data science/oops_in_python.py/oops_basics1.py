@@ -4,22 +4,27 @@ class atm:
         self.pin = ''
         self.balance = int(input('please enter your balance'))
         self.pin = input('please enter your pin')
+        self.menu()
     
     def menu(self):
-        # self.balance = int(input('please enter your balance'))
-        # self.pin = input('please enter your pin')
+        while True:
+            # self.balance = int(input('please enter your balance'))
+            # self.pin = input('please enter your pin')
 
-        ip = int(input(" how can i help you please enter \n" \
-        "1 to check balance \n" \
-        "2 to withdraw \n" \
-        "3 to depoite "))
+            ip = int(input(" how can i help you please enter \n" \
+            "1 to check balance \n" \
+            "2 to withdraw \n" \
+            "3 to depoite "))
 
-        if ip == 1:
-            self.bal_check()
-        elif ip == 2:
-            self.withdraw()
-        elif ip == 3:
-            self.deposite()
+            if ip == 1:
+                self.bal_check()
+
+            elif ip == 2:
+                self.withdraw()
+
+            elif ip == 3:
+                self.deposite()
+
 
     def auth(self):
         pin = input('plase enter your pin')
@@ -36,10 +41,11 @@ class atm:
         if self.auth() == True:
             print(' your balance is', self.balance)
             cont = input('do you want to continue with other service')
-            if cont == 'yes' or 'Yes' or 'y' or 'Y':
+            if cont == 'yes' or cont == 'Yes' or cont == 'y' or cont == 'Y':
                 self.menu()
             else :
                 print('\n Thank you for using our service')
+                exit()
         else :
             self.menu()
 
@@ -49,9 +55,16 @@ class atm:
         if wi <= self.balance:
             print(' take this your',wi)
             self.balance = self.balance - wi
-            self.menu()
+
+
+            # cont = input('do you want to continue with other service')
+            # if cont.lower() in ['yes','y']:
+            #     self.menu()
+            # else:
+            #     print('Thank you')
+
             cont = input('do you want to continue with other service')
-            if cont == 'yes' or 'Yes' or 'y' or 'Y':
+            if cont == 'yes' or cont == 'Yes' or cont == 'y' or cont == 'Y':
                 self.menu()
             else :
                 print('\n Thank you for using our service')
@@ -65,17 +78,17 @@ class atm:
         print('your amount has been deposited to your account')
         i = input("do you want to see balance \n for yes 'y' ")
         # print('your current balance is - ',self.balance if i == 'y' or 'Y' else self.menu)
-        if i == 'y' or 'Y' or 'yes' or 'Yes':
+
+
+        if i == 'y' or cont == 'Y' or cont == 'yes' or cont == 'Yes':
             print('your balance is -->', self.balance )
             cont = input('do you want to continue with other service')
-            if cont == 'yes' or 'Yes' or 'y' or 'Y':
+
+            if cont == 'yes' or cont == 'Yes' or cont == 'y' or cont == 'Y':
                 self.menu()
             else :
                 print('\n Thank you for using our service')
-
-    
-        
+                exit()
 
 
 user = atm()
-user.menu()
