@@ -26,4 +26,41 @@ print(dir(person1))
 
 
         # getter and setter
+
+
+        # instance and static variable
+        # decorator   ############################## utility function
+        # reference variable , pass by reference
+        # mutability of object
+        # encapsulation
+        # collection of objects
+        # instance variable
+        # static variables         ****************************** 
+
+        # 1. Instance Variables
+            # Definition
+
+            # An instance variable belongs to a specific object (instance) of a class.
+            # Each object has its own copy.
+            # Changes affect only that object, not others.
+            # Defined using self inside methods (usually inside __init__). 
+            # objectname.variable name = value ------------> instnce variable
+
+
+         # 2. Static Variables (Class Variables)
+         # Definition
+
+                # A static variable is shared by all objects of the class.
+                # Stored once in the class
+                # Every object uses the same variable
+                # Defined outside methods but inside class
+                # self.cid = classname.variablename  -----------------> way to creat static variable
+
+
+        # @staticmethod ------> decorator
+        # static methods   ( can be without self ------> to access it use class name eg --> bank.get_counter())
+        # utility method
+        
+
+
         

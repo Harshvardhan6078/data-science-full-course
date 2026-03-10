@@ -1,6 +1,6 @@
 class atm:
     def __init__(self):
-        self.balance = 0
+        self.balance = 0     # self == user
         self.pin = ''
         self.balance = int(input('please enter your balance'))
         self.pin = input('please enter your pin')
