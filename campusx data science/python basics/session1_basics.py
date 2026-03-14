@@ -35,26 +35,61 @@
 # str1.isprintable()
 
 
-list1 = [1,2,3,4,5,6]
-list1.append(12)
-list1.extend([1,2,3,4])
-list1.insert(-1,300)
+# list1 = [1,2,3,4,5,6]
+# list1.append(12)
+# list1.extend([1,2,3,4])
+# list1.insert(-1,300)
 
 
-s1 = {1,2,3,4}
-s2 = {9,8,7,6}
-l1 = [5,6,7,8]
+# s1 = {1,2,3,4}
+# s2 = {9,8,7,6}
+# l1 = [5,6,7,8]
 
-s1.union(s1)
+# s1.union(s1)
 
 
 
-name = 'harsh basude'
-namel1 = name.split()
-print(namel1)
-namel1.reverse()
-print(namel1)
-print(" ".join(namel1))
+# name = 'harsh basude'
+# namel1 = name.split()
+# print(namel1)
+# namel1.reverse()
+# print(namel1)
+# print(" ".join(namel1))
 
 # deep and shallow copy
 
+
+
+
+# intrative statements
+# string formating         ******************(f-string , format method)
+# transfer statements
+# flow control statments  -----> conditional
+                                # looping
+                                # jump
+                                # function/eception
+
+# operators 
+# types of function
+
+
+# fact = 1
+# num = 5
+
+# for i in range(1,num+1):
+#     fact = fact*i
+
+# print(fact)
+
+
+# positional argument
+# access specifier and modifier
+# interface in oops
+#                 -----> when all methods are @
+
+
+str1 = 'harshvardhanbasude'
+D1 = {i:i for i in str1 }
+print(D1)
+
+print()

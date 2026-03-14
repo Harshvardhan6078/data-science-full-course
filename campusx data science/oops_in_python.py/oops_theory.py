@@ -1,6 +1,6 @@
     # class , objects , methods , constructor --> only one constructor per class
     # predefined and user defined class
-    # class diagram ( attributes / data / variables , methods)
+    # class diagram ( attributes / data / variables , methods)  #### decorator
     # private , public methods
     # magic methods  ( dunder methods)   __ method__
                         # called automatically when object is created

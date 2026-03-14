@@ -11,7 +11,7 @@ class car:
     
     count = 0
 
-    def __init__(self):
+    def __init__(self):                                     # input of any class is declared here
         self.speed = 160
         self.count = car.count + 1
     def wheels(self):
@@ -23,7 +23,7 @@ class car:
     
     def start(self):
         print(' your car is started')
-        
+
 
 # child class of car
 class tata(car):
@@ -32,7 +32,9 @@ class tata(car):
         self.speed = 200
     
     def milage(self):
-        return super().milage()
+        return super().milage()           # super is way of calling parent class method but NOT variables
+                                          # super cant be called outside the child class
+    
     
 car1 = tata()
 car1.start()
