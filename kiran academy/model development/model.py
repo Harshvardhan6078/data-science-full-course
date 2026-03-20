@@ -10,7 +10,7 @@ except ImportError:
 
 # Configure the API Key
 # The key you provided earlier is saved here:
-API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyBERN50M_R_fxFJhSCb-d84--gcwG7GNNs")
+API_KEY = os.environ.get("GEMINI_API_KEY", "YOUR_API_KEY_HERE")
 genai.configure(api_key=API_KEY)
 
 # The system prompt sets the behavior of the AI

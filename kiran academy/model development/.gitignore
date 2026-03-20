@@ -1,0 +1,7 @@
+# Local Environments
+.venv/
+__pycache__/
+
+# Streamlit local secrets (NEVER PUSH)
+.streamlit/
+secrets.toml
