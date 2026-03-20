@@ -88,8 +88,41 @@
 #                 -----> when all methods are @
 
 
-str1 = 'harshvardhanbasude'
-D1 = {i:i for i in str1 }
-print(D1)
+# str1 = 'harshvardhanbasude'
+# D1 = {i:i for i in str1 }
+# print(D1)
 
-print()
+# print()
+
+#
+
+
+h = [1,2,3,4,5,6]
+ans = lambda x : x*2
+print(ans)
+
+ans1 = map(lambda x : x*2 , h)
+print(ans1)
+print(list(ans1))
+print(list(ans1))
+
+ans2 = filter(lambda x : x%2==0  , h )
+print(list(ans2))
+
+
+
+"""
+
+def add(a,b):
+    if a<1:
+        a = a-1
+        b = b-1
+        sum = a+b
+        add(a,b)
+    else :
+        sum = a+b
+        return sum
+
+a = print(add(6,7))
+
+"""
